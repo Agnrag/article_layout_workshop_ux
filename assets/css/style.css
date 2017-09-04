@@ -6,16 +6,13 @@ html {
     font-size: 62.5%;
     font-family: 'Playfair Display', serif;
     color: #4f4f4a;
+    background: #ffc107 url(../img/background.jpg) fixed no-repeat;
+    background-size: contain;
 }
 
 nav {
     display: none;
 }
-
-body {
-    background: #ffc107;
-}
-
 
 /*colors*/
 
@@ -34,8 +31,9 @@ body {
 h1 {
     font-size: 3.7rem;
     background: rgba(255, 255, 255, 0.85);
-    padding: 30px;
-    display: inline;
+    padding: 3.5rem;
+    display: inline-block;
+    margin: 4rem;
 }
 
 h2 {
@@ -54,9 +52,9 @@ p {
 .number {
     font-size: 3.1rem;
     background: #4f4f4a;
-    display: inline;
+    display: inline-block;
     color: #fff;
-    padding: 10px;
+    padding: 1.5rem;
 }
 
 .lead {
@@ -88,14 +86,38 @@ h1 span {
 }
 
 .circle {
-    width: 13px;
-    height: 13px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background: #4f4f4a;
+    margin: 1rem auto;
 }
 
 .more {
-    padding: 10px 20px;
+    padding: 1rem 1.5rem;
     border: 1px dashed #4f4f4a;
     font-size: 2.5rem;
+    display: inline-block;
+}
+
+
+/*other*/
+
+article {
+    width: 50%;
+    min-width: 600px;
+    max-width: 850px;
+    position: absolute;
+    right: 5%;
+}
+
+.hamburger {
+    background: url(../img/hamburger.svg) right no-repeat;
+    height: 3.2rem;
+    display: block;
+    margin: 1rem;
+}
+
+figure img {
+    width: 13rem;
 }
