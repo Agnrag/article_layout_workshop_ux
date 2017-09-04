@@ -1,3 +1,101 @@
+@import url(reset.css);
+
+/*main settings*/
+
+html {
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+    color: #4f4f4a;
+}
+
 nav {
     display: none;
+}
+
+body {
+    background: #ffc107;
+}
+
+
+/*colors*/
+
+
+/*
+#ffc107; - background;
+#f9a825; - span h1;
+#48504e; - text frames;
+#fff; - h2;
+#4f4f4a; - paragraphs, h1, .circle;
+*/
+
+
+/*typography*/
+
+h1 {
+    font-size: 3.7rem;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    display: inline;
+}
+
+h2 {
+    font-size: 2.7rem;
+    line-height: 1.407;
+    color: #fff;
+    background: #48504e;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.56;
+}
+
+.number {
+    font-size: 3.1rem;
+    background: #4f4f4a;
+    display: inline;
+    color: #fff;
+    padding: 10px;
+}
+
+.lead {
+    font-size: 2.4rem;
+    line-height: 1.417;
+    font-style: italic;
+    color: #4f4f4a;
+    text-align: center;
+}
+
+.erase {
+    text-decoration: line-through;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer p {
+    text-align: right;
+}
+
+em {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+h1 span {
+    color: #f9a825;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #4f4f4a;
+}
+
+.more {
+    padding: 10px 20px;
+    border: 1px dashed #4f4f4a;
+    font-size: 2.5rem;
 }
