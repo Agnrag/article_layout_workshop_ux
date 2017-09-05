@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(border.css);
 
 /*main settings*/
 
@@ -10,9 +11,11 @@ html {
     background-size: contain;
 }
 
+form,
 nav {
     display: none;
 }
+
 
 /*colors*/
 
@@ -42,19 +45,23 @@ h2 {
     color: #fff;
     background: #48504e;
     padding: 1rem;
-}
-
-p {
-    font-size: 1.8rem;
-    line-height: 1.56;
+    display: inline-block;
 }
 
 .number {
     font-size: 3.1rem;
     background: #4f4f4a;
-    display: inline-block;
+    display: block;
     color: #fff;
     padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.56;
 }
 
 .lead {
@@ -90,20 +97,12 @@ h1 span {
     height: 1rem;
     border-radius: 50%;
     background: #4f4f4a;
-    margin: 1rem auto;
-}
-
-.more {
-    padding: 1rem 1.5rem;
-    border: 1px dashed #4f4f4a;
-    font-size: 2.5rem;
-    display: inline-block;
+    margin: 3rem auto;
 }
 
 
 /*other*/
-
-article {
+section {
     width: 50%;
     min-width: 600px;
     max-width: 850px;
@@ -111,13 +110,55 @@ article {
     right: 5%;
 }
 
+article {
+   margin-bottom: 5rem;
+}
+
+.more {
+    padding: 1rem 1.5rem;
+    border: 1px dashed #4f4f4a;
+    font-size: 2.5rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
 .hamburger {
-    background: url(../img/hamburger.svg) right no-repeat;
+    background: #fff url(../img/hamburger.svg) center no-repeat;
     height: 3.2rem;
-    display: block;
+    width: 3.2rem;
     margin: 1rem;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+
+figure {
+    margin: 20% 0 0 -25%;
+    float: left;
 }
 
 figure img {
     width: 13rem;
+}
+
+hgroup {
+    margin-left: -25%;
+    position: relative;
+    display: inline-block;
+}
+
+.content {
+    padding-top: 4rem;
+    column-count: 2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    z-index: 10;
 }
